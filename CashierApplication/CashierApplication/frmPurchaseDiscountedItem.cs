@@ -29,6 +29,20 @@ namespace CashierApplication
         {
             di.setPayment(Convert.ToDouble(PaymentReceived.Text));
             DisChange.Text = di.getChange().ToString();
-        }   
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmLoginAccount fLA = new frmLoginAccount();
+            fLA.Show();
+            this.Hide();
+
+        }
+
+        private void exitApplicationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+  
     }
 }
